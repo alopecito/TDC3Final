@@ -1,0 +1,481 @@
+/* ====RESET ===== */
+
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Baloo+Bhaina|Righteous|Poiret+One');
+
+/*font-family: 'Baloo Bhaina', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Audiowide', cursive;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    
+    font-size: 25px;
+    padding: 2px;
+    
+}
+h2 {
+    
+    font-size: 17px;
+    padding: 2px;
+    
+}
+
+html,
+body {
+    height: 100%;
+    /*this ensure to have always a backgound! hight value in percentages*/
+}
+
+header {
+    position: fixed;
+    /*this will not do anything but the children of this sections will be absolute positioning*/
+    text-align: center;
+}
+
+hgroup {
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    overflow: hidden;
+}
+
+hgroup h1 {
+    font-family: "simplonbold", arial;
+    font-weight: lighter;
+    font-size: 25px;
+    color: #000;
+    line-height: 30px;
+    text-transform: capitalize;
+    text-shadow: 1px 0px 20px rgba(0, 0, 0, 0.9);
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+hgroup h2 {
+    font-family: "simplonbold", arial;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #000;
+    line-height: 18px;
+    text-transform: capitalize;
+    text-shadow: 1px 0px 20px rgba(0, 0, 0, 0.9);
+    padding-bottom: 35px;
+    text-decoration: none;
+}
+
+.crearfix {
+    clear: both;
+}
+
+video#vid1 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url(.../images/bck.jpg) no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    -webkit-filter: opacity(.2);
+    filter: opacity(.2);
+}
+
+.corner {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.corner a {
+    font-family: 'Righteous', cursive;
+    color: #000;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: white;
+    opacity: .8;
+    border-radius: 15px;
+    padding: 0px 10px 0px 10px;
+}
+
+.corner a:link,
+.corner a:active {
+    color: #eee;
+    text-decoration: none;
+}
+
+.corner a:hover {
+    color: #fff;
+    font-size: 22px;
+    background-color: blue;
+}
+
+#nav1 {
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    position: fixed;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+#nav1 div {
+    width: 100%;
+    height: 55px;
+    margin: 0 10px 10px 0;
+    float: left;
+    color: #FF0000;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+#div2 {
+    height: 55px;
+}
+
+#div2 h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+    padding-top: 2px;
+    text-transform: uppercase;
+}
+
+#div2 img {
+    width: 120px;
+    max-width: 80%;
+    height: auto;
+}
+
+#nav2 {
+    text-align: center;
+}
+
+#nav2 div {
+    margin: 8px 0 0 0;
+    text-align: center;
+    color: #FF0000;
+    padding: 3px;
+    transition: all .4s;
+}
+
+#nav2 a {
+    font-family: 'simplonlight', arial;
+    text-transform: uppercase;
+    color: #FF0000;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 45px;
+    text-decoration: none;
+}
+
+#nav2 a:link {
+    text-decoration: none;
+}
+
+#nav2 a:active {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+#nav2 {
+    color: #ffffff;
+}
+
+#nav2 a:hover {
+    font-weight: bolder;
+    font-size: 18px;
+    text-shadow: 1px 0px 10px rgba(255, 255, 255, 0.86);
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: transparent;
+    text-align: center;
+    float: right;
+    color: black;
+    z-index: 2000;
+}
+
+.footer a {
+    font-size: 30px;
+    color: blue;
+}
+
+.footer a:active {
+    color: blue;
+    font-size: 35px;
+}
+
+.footer a:link {
+    color: blue;
+    font-size: 35px;
+}
+
+.footer a:visited {
+    color: #fff;
+    font-size: 35px;
+}
+
+.footer a:hover {
+    color: #FF0000;
+    font-size: 40px;
+}
+
+.footer h3 {
+    font-size: 11px;
+    color: #000;
+    padding: 5px;
+}
+
+span.yellowfont {
+    color: #ffc11b !important;
+}
+
+span.yellowbottomline {
+    border-bottom: 2px solid #ffc11b;
+}
+
+button {
+    background-color: #000;
+    color: white;
+    padding: 14px 40px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+
+/*THIS IS THE CODE FOR THE LOGIN FORM*/
+
+
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.container {
+    padding: 16px;
+    background-color: #f1f1f1
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.login-wrap {
+    position: relative;
+    margin: 0 auto;
+    background: #ecf0f1;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+    padding: 15px;
+}
+
+#section2 {
+    background: #eee;
+    width: 100%;
+    margin: 0 auto !important;
+    max-height: 100%;
+    padding: 2%;
+    z-index: 100;
+    text-align: center;
+
+}
+
+main {
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -webkit-column-gap: 10px;
+    /* Chrome, Safari, Opera */
+    -webkit-column-gap: auto;
+    -moz-column-count: 2;
+    /* Firefox */
+    -moz-column-gap: 10px;
+    /* Firefox */
+    -moz-column-fill: auto;
+    column-count: 1;
+    column-gap: 10px;
+    column-fill: auto;
+}
+
+main figure {
+    
+    width: 280px;
+    margin: 25px;
+    padding: 15px 15px 0;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    border: 1px solid #f9f9f9;
+    border-radius: 5px;
+    border-shadow: 0 4px 16px rgba(0, 0, 0, .2);
+    transition: all .4s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    display: inline-block;
+    text-align: center;
+}
+
+main figcaption {
+    font: 12PX;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+main figure img {
+    width: 250;
+    height: 200px;
+}
+
+h1#title {
+    text-align: center;
+    padding: 10px;
+}
+
+table.tableSearch {
+    
+    
+}
+
+
+
+
+/*END*/
+
+@media only screen and (min-width: 481px) {
+    /*this @media is only for screen >481 min-width ===max-width will do the oposite
+    --==anything bigger will change as this below*/
+    #nav1 {
+        height: 80px;
+    }
+    #div2 img {
+        width: auto;
+        height: 100%;
+    }
+    #div2 h1 {
+        font-size: 25px;
+        padding-top: 8px;
+    }
+    hgroup h1 {
+        font-size: 35px;
+        line-height: 85px;
+    }
+    hgroup h2 {
+        font-size: 25px;
+        line-height: 30px;
+        padding-bottom: 55px;
+    }
+    #nav2 a {
+        font-size: 25px;
+    }
+    #nav2 a:hover {
+        font-size: 28px;
+        text-shadow: 1px 0px 15px rgba(255, 255, 255, 0.86);
+        padding: 3px;
+    }
+    .corner a {
+        font-size: 28px;
+    }
+    .corner a:hover {
+        font-size: 32px;
+    }
+    .formContainer {
+        width: 280px;
+    }
+    
+    #section2 {
+
+    width: 80%;
+
+}
+}
+
+@media only screen and (min-width: 800px) {
+    /*this @media is only for screen >769 min-width ===max-width will do the oposite
+    --==anything bigger will change as this below*/
+    #nav1 {
+        height: 90px;
+    }
+    #nav1 div {
+        height: 65px;
+    }
+    #div2 img {
+        width: auto;
+        height: 100%;
+        padding: 5px 0px;
+    }
+    #div2 h1 {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    hgroup h1 {
+        font-size: 55px;
+        line-height: 85px;
+    }
+    hgroup h2 {
+        font-size: 25px;
+        padding-bottom: 60px;
+    }
+    #nav2 a {
+        font-size: 25px;
+    }
+    #nav2 a:hover {
+        font-size: 28px;
+    }
+    .formContainer {
+        width: 320px;
+    }
+}

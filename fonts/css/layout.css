@@ -1,0 +1,480 @@
+/*=================LAYOUT OTHERS==================*/
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Baloo+Bhaina|Righteous|Poiret+One');
+
+
+
+#section1{
+    width: 100%;
+    height: 100%;
+    position: relative; /*this is the parent, must be relative to link the other sections*/
+    overflow: hidden;
+    background: url(../images/a.jpg) no-repeat fixed center center;
+    -webkit-background-size: cover; /*this is necessaary for MACS*/
+    
+    z-index: -199;
+    
+    
+}
+
+#section2 {
+    
+    width: 100%;
+    height: 100%;
+    position: relative; /*this is the parent, must be relative to link the other sections*/
+    z-index: -200;
+    background-color: #eee;
+}
+#sectionslide {
+    
+    width: 100%;
+    height: 100%;
+    position: relative; /*this is the parent, must be relative to link the other sections*/
+    z-index: -200;
+    background-color: #FF1000;
+    
+}
+
+
+
+#section3, #section4 {
+    
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -201;
+}
+
+
+
+
+
+header {
+    position: relative; /*this will not do anything but the children of this sections will be absolute positioning*/
+    text-align: center;
+    
+}
+
+
+hgroup {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    overflow: hidden;
+    padding: 15px;
+    
+}
+
+hgroup h1{
+    font-family: "simplonbold",arial;
+    font-weight: lighter;
+    font-size: 20px;
+    color: blue;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 20px rgba(0, 0, 0, 0.9); 
+    padding-bottom:  5px;
+}
+
+hgroup h2{
+    font-family: "simplonbold",arial;
+    font-weight: lighter;
+    font-size: 14px;
+    color: black;
+    line-height: 18px;
+    text-transform: capitalize;
+    text-shadow: 1px 0px 20px rgba(0, 0, 0, 0.9); 
+    padding-bottom: 35px;
+}
+
+
+
+/*.blurOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border:0;
+    top: 0;
+    left: 0;
+    
+    
+    overflow-x: hidden; 
+    transition: 0.3s;
+    z-index: -200; 
+}*/
+
+.crearfix {
+    clear: both;
+    
+}
+
+
+/*video#vid1 {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -205;
+    background: url(.../images/bck.jpg) no-repeat;
+    background-size: cover;
+    
+}*/
+
+
+
+#nav1 {
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    position: fixed;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.3);
+    overflow: hidden;
+    background-color: rgba(0,0,0, 0.1);
+    z-index: 1;
+}
+
+#nav1 div {
+    width: 100%;
+    height: 45px;
+    margin: 0 10px 10px 0;
+    float: left;
+    color: #fff;
+    font-weight: normal;
+    font-size: 25px;
+    
+}
+
+
+#div2 {
+    height: 55px;
+    
+}
+
+#div2 h1{
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+    padding-top: 2px;
+    text-transform: uppercase;
+    
+    
+}
+
+
+#div2 img {
+    width: 200px;
+    max-width: 80%;
+    height: auto;
+    
+    
+}
+
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: transparent;
+    text-align: center;
+    float: right;
+    color: black ;
+    z-index: 2000;
+    
+}
+
+.footer a{
+    font-size: 30px;
+    color: #fff;
+}
+
+.footer a:active {
+    color: #fff;
+    font-size: 35px;
+}
+
+.footer a:link {
+    color: #fff;
+    font-size: 35px;
+}
+
+
+
+.footer a:visited {
+    color: #fff;
+    font-size: 35px;
+}
+
+.footer a:hover {
+    color: #FF0000;
+    font-size: 40px;
+}
+
+
+.footer h3{
+    font-size: 11px;
+    color: #000;
+    padding: 5px;
+}
+
+span.redFont {
+    color: red !important;
+}	
+span.yellowbottomline {
+    border-bottom: 2px solid #ffc11b;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    margin: 0 auto; 	
+    text-align: justify;
+    padding-top: 15px;
+}
+
+
+main {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+    -webkit-column-gap: auto;
+    
+    -moz-column-count: 1; /* Firefox */
+    -moz-column-gap: 10px; /* Firefox */
+    -moz-column-fill: auto; 
+    
+    column-count: 1;
+    column-gap: 10px;
+    column-fill: auto;
+    
+}
+main h1 {
+    font-family: "simplonbold",arial;
+    font-size: 18px;
+    color: #000;
+    padding: 10px 10px;
+    
+}
+main p{
+    padding: 10px;
+    
+}
+
+
+h1.title1 {
+    font-family: "simplonbold",arial;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+main figure {
+    
+    width: 100%;
+    padding: 5px;
+    
+}
+
+
+
+main figure img {
+    width: 100%;
+    height: auto;
+    
+}
+
+#contactUs {
+    
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    text-align: center;
+    background-color: #FF1000;	
+}
+
+#contactUs a {
+    font-family: 'simplonBold', arial;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 45px;
+    text-decoration: none;
+}
+
+#contactUs a:link {
+    text-decoration: none;
+}
+
+#contactUs a:active {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+#contactUs {
+    color: #ffffff;
+    
+}
+
+#contactUs a:hover {
+    font-weight: bolder;
+    font-size: 18px;
+    text-shadow: 1px 0px 10px rgba(25, 0, 0, 0.86);
+}
+
+
+#finalDiv {
+    width: 100%;
+    height: 80px;
+}
+
+
+
+@media only screen and (min-width: 481px) {  
+    /*this @media is only for screen >481 min-width ===max-width will do the oposite
+    --==anything bigger will change as this below*/
+    
+    
+    #nav1 {
+        height: 100px;
+    }
+    
+    #div2 img {
+        width: auto;
+        height: 100%;
+    }
+    
+    #div2 h1{
+        font-size: 25px;
+        padding-top: 8px;
+    }
+    
+    
+    
+    hgroup {
+        position: absolute;
+        width: 100%;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    
+    
+    main {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+        -webkit-column-gap: auto;
+        
+        -moz-column-count: 1; /* Firefox */
+        -moz-column-gap: 20px; /* Firefox */
+        -moz-column-fill: auto; 
+        
+        column-count: 1;
+        column-gap: 20px;
+        column-fill: auto;
+        background-color: rgba(255,255,255,0.8);
+        overflow: hidden;
+        
+    }
+    h1.title1 {
+        
+        font-size: 15px;
+        padding-bottom: 10px;
+        color: #000;
+        
+    }
+    
+    #finalDiv {
+        width: 100%;
+        height: 100px;
+    }
+    
+    
+    main figure img {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;	
+    }
+    
+    main h1 {
+        
+        font-size: 16px;
+        padding: 15px;
+        
+    }
+    main p{
+        font-size: 15px;
+        padding: 10px;
+        
+    }
+    
+    #contactUs {
+        
+        width: 100%;
+        height: 50px;
+        
+    }
+    
+    #contactUs a {
+        font-size: 25px;
+        
+    }
+    
+    #contactUs a:hover {
+        font-size: 28px;
+        
+    }
+    
+    }
+
+@media only screen and (min-width: 769px) {  
+    /*this @media is only for screen >769 min-width ===max-width will do the oposite
+    --==anything bigger will change as this below*/
+    #nav1 {
+        height: 110px;
+    }
+    
+    #div2 img {
+        width: auto;
+        height: 100%;
+        padding: 5px;
+    }
+    #div2 h1{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    
+    #finalDiv {
+        width: 100%;
+        height: 110px;
+    }
+    
+    
+    
+    main {
+        -webkit-column-count: 3; /* Chrome, Safari, Opera */
+        -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+        -webkit-column-gap: auto;
+        
+        -moz-column-count: 3; /* Firefox */
+        -moz-column-gap: 10px; /* Firefox */
+        -moz-column-fill: auto; 
+        
+        column-count: 3;
+        column-gap: 10px;
+        column-fill: auto;
+        
+    }
+    
+    
+    
+}
